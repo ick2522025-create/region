@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="千葉県船橋市・下総中山を歩いて楽しむ小さな旅。法華経寺の境内や参道、街の寄り道スポットをご案内します。"
+    />
+    <meta name="theme-color" content="#f8f6f0" />
+    <title>よりみち下総中山｜お寺と参道を歩く小さな旅</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="よりみち下総中山 ホーム">
+        <span class="wordmark-mark" aria-hidden="true">下</span>
+        <span class="wordmark-copy">よりみち<span>下総中山</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="メニューを開く">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="#spots">見どころ</a>
+        <a href="#route">おさんぽコース</a>
+        <a href="#guide">旅のヒント</a>
+        <a class="nav-cta" href="#route">今日、歩いてみる <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-image" role="img" aria-label="木立の奥に佇む日本のお寺"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span> CHIBA · FUNABASHI</p>
+          <h1>いつもの駅から、<br />歴史の小径へ。</h1>
+          <p class="hero-lead">お寺の静けさと、参道のにぎわい。<br />下総中山で見つける、ちいさな旅。</p>
+          <a class="hero-link" href="#spots">この街の見どころを見る <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-side-note" aria-hidden="true">A LITTLE WALK IN SHIMŌSA NAKAYAMA</div>
+        <div class="hero-caption"><span class="caption-dot"></span> 下総中山の風景</div>
+        <div class="hero-counter"><span>01</span> — 03</div>
+      </section>
+
+      <section class="intro section-wrap">
+        <div class="intro-label"><span class="section-number">01</span><span>THE TOWN</span></div>
+        <div class="intro-copy">
+          <p class="eyebrow">駅からはじまる、寄り道の時間</p>
+          <h2>にぎやかな街のすぐそばに、<br />深呼吸したくなる場所がある。</h2>
+          <p class="intro-description">
+            JR下総中山駅から歩いて、古くから続く参道の先へ。<br class="desktop-break" />
+            法華経寺の堂々とした門をくぐれば、街の音がふっと遠のきます。<br class="desktop-break" />
+            お参りのあとは、商店街で気になる一軒を見つけてみませんか。
+          </p>
+          <a class="text-link" href="#route">おすすめの歩き方 <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="intro-stamp" aria-hidden="true"><span>歩いて出会う</span><strong>下総<br />中山</strong><span>千葉・船橋</span></div>
+      </section>
+
+      <section class="spots-section" id="spots">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <div>
+              <div class="intro-label"><span class="section-number">02</span><span>SPOTS TO VISIT</span></div>
+              <h2>この街の、<em>いいところ。</em></h2>
+            </div>
+            <p>お参りも、街歩きも。<br />気分に合わせて寄り道を。</p>
+          </div>
+          <div class="spot-filters" role="group" aria-label="スポットを絞り込む">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">すべて <span>04</span></button>
+            <button class="filter-button" type="button" data-filter="temple" aria-pressed="false">寺社 <span>02</span></button>
+            <button class="filter-button" type="button" data-filter="walk" aria-pressed="false">街歩き <span>01</span></button>
+            <button class="filter-button" type="button" data-filter="local" aria-pressed="false">街のよりみち <span>01</span></button>
+          </div>
+          <div class="spot-grid">
+            <article class="spot-card spot-card-featured" data-category="temple">
+              <a class="spot-image image-temple" href="#guide" aria-label="法華経寺の旅のヒントを見る">
+                <span class="image-index">01 / TEMPLE</span>
+                <span class="image-arrow" aria-hidden="true">↗</span>
+              </a>
+              <div class="spot-info">
+                <div class="spot-meta"><span>寺社</span><span>下総中山駅から徒歩約10分</span></div>
+                <h3>中山法華経寺</h3>
+                <p>鎌倉時代に開かれた、日蓮宗の大本山。仁王門をくぐると、五重塔や祖師堂など歴史を感じる堂宇が迎えてくれます。</p>
+                <a class="card-link" href="#guide">境内を歩くヒント <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="spot-card" data-category="temple">
+              <a class="spot-image image-pagoda" href="#guide" aria-label="法華経寺の五重塔について読む">
+                <span class="image-index">02 / ARCHITECTURE</span>
+                <span class="image-arrow" aria-hidden="true">↗</span>
+              </a>
+              <div class="spot-info">
+                <div class="spot-meta"><span>寺社</span><span>法華経寺境内</span></div>
+                <h3>静かに佇む、五重塔</h3>
+                <p>境内で目を引く五重塔。木々の間から見上げたり、季節ごとの景色と一緒に眺めたり。</p>
+                <a class="card-link" href="#guide">境内を歩くヒント <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="spot-card" data-category="walk">
+              <a class="spot-image image-approach" href="#route" aria-label="中山参道の歩き方を見る">
+                <span class="image-index">03 / OLD TOWN</span>
+                <span class="image-arrow" aria-hidden="true">↗</span>
+              </a>
+              <div class="spot-info">
+                <div class="spot-meta"><span>街歩き</span><span>駅から法華経寺へ</span></div>
+                <h3>中山の参道</h3>
+                <p>駅前からお寺へ続く道をゆっくりと。昔ながらの街並みや、道沿いのお店を眺めながら歩きます。</p>
+                <a class="card-link" href="#route">参道を歩くコース <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="spot-card" data-category="local">
+              <a class="spot-image image-town" href="#guide" aria-label="下総中山の街の楽しみ方を見る">
+                <span class="image-index">04 / LOCAL LIFE</span>
+                <span class="image-arrow" aria-hidden="true">↗</span>
+              </a>
+              <div class="spot-info">
+                <div class="spot-meta"><span>街のよりみち</span><span>駅周辺</span></div>
+                <h3>駅前で、ひと休み</h3>
+                <p>お参りのあとは駅の近くへ。気になる喫茶店や食事処を探すのも、下総中山の楽しみのひとつ。</p>
+                <a class="card-link" href="#guide">街歩きのヒント <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <p class="filter-empty" hidden>このカテゴリのスポットはありません。</p>
+        </div>
+      </section>
+
+      <section class="route-section" id="route">
+        <div class="route-photo" role="img" aria-label="参道を散策するイメージ"></div>
+        <div class="route-content">
+          <div class="intro-label"><span class="section-number">03</span><span>A LITTLE WALK</span></div>
+          <p class="eyebrow">迷ったら、まずはこのコース</p>
+          <h2>駅からお寺へ。<br />参道をたどる、<br /><em>半日さんぽ。</em></h2>
+          <p class="route-description">道すがらの景色も楽しみながら、下総中山の空気を味わうゆったりコースです。</p>
+          <div class="route-stats">
+            <div><span>所要時間</span><strong>約2〜3時間</strong></div>
+            <div><span>歩く距離</span><strong>約2 km</strong></div>
+            <div><span>スタート</span><strong>JR下総中山駅</strong></div>
+          </div>
+          <ol class="route-stops">
+            <li><span class="stop-number">01</span><span><strong>JR下総中山駅</strong><small>北口からスタート</small></span><span class="stop-time">0 min</span></li>
+            <li><span class="stop-number">02</span><span><strong>中山の参道を歩く</strong><small>街の雰囲気を楽しみながら</small></span><span class="stop-time">約10 min</span></li>
+            <li><span class="stop-number">03</span><span><strong>中山法華経寺</strong><small>境内をゆっくりお参り</small></span><span class="stop-time">約20 min</span></li>
+            <li><span class="stop-number">04</span><span><strong>駅周辺でひと休み</strong><small>お気に入りのお店を見つけよう</small></span><span class="stop-time">約15 min</span></li>
+          </ol>
+          <p class="route-note">※時間・距離は目安です。境内の拝観時間や行事は、事前に公式情報をご確認ください。</p>
+        </div>
+      </section>
+
+      <section class="guide-section section-wrap" id="guide">
+        <div class="guide-heading">
+          <div class="intro-label"><span class="section-number">04</span><span>BEFORE YOU GO</span></div>
+          <h2>気持ちよく歩くための、<em>小さなヒント。</em></h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-item">
+            <span class="guide-icon" aria-hidden="true">✳</span>
+            <h3>歩きやすい靴で</h3>
+            <p>駅から境内まで歩いて楽しむコース。歩き慣れた靴がおすすめです。</p>
+          </article>
+          <article class="guide-item">
+            <span class="guide-icon" aria-hidden="true">◷</span>
+            <h3>お出かけ前に確認を</h3>
+            <p>行事や天候などで状況が変わる場合があります。参拝前に最新情報をご確認ください。</p>
+          </article>
+          <article class="guide-item">
+            <span class="guide-icon" aria-hidden="true">⌂</span>
+            <h3>境内では静かに</h3>
+            <p>境内はお参りの場所です。参拝の方への配慮を忘れず、落ち着いて散策しましょう。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="closing-inner">
+          <p class="eyebrow">YOUR NEXT LITTLE ADVENTURE</p>
+          <h2>次のお休みは、<br />下総中山を歩こう。</h2>
+          <a class="closing-link" href="#home">ページの上へ戻る <span aria-hidden="true">↑</span></a>
+          <span class="closing-decoration" aria-hidden="true">寄</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#home">
+        <span class="wordmark-mark" aria-hidden="true">下</span>
+        <span class="wordmark-copy">よりみち<span>下総中山</span></span>
+      </a>
+      <p>千葉県船橋市・下総中山の小さな観光ガイド</p>
+      <span class="copyright">© 2026 YORIMICHI SHIMŌSA NAKAYAMA</span>
+    </footer>
+  </body>
+</html>

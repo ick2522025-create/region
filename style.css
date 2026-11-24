@@ -131,11 +131,30 @@ button {
 }
 
 .hero-image {
-  background-image: url("https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=2200&q=85");
-  background-position: center 52%;
-  background-size: cover;
+  background:
+    linear-gradient(172deg, transparent 0 68%, #d4c99f 68.5% 73%, transparent 73.5%),
+    linear-gradient(145deg, transparent 0 61%, #7f9271 61.5% 64%, transparent 64.5%),
+    linear-gradient(180deg, #aebaaa 0%, #ced1bb 62%, #87927a 62.5%, #69785f 100%);
   transform: scale(1.015);
   animation: hero-arrive 1.4s ease both;
+}
+
+.hero-image::before {
+  display: none;
+}
+
+.hero-image::after {
+  display: none;
+}
+
+.hero-illustration,
+.spot-image > svg,
+.route-photo > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .hero-shade {
@@ -447,7 +466,7 @@ p {
   background-color: #9a9b87;
   background-position: center;
   background-size: cover;
-  transition: background-size 200ms ease;
+  transition: filter 200ms ease;
 }
 
 .spot-image::after {
@@ -457,28 +476,102 @@ p {
   content: "";
 }
 
+.spot-image::before {
+  display: none;
+}
+
+.spot-image > svg {
+  z-index: 0;
+}
+
+.spot-image .image-index,
+.spot-image .image-arrow {
+  z-index: 2;
+}
+
+.spot-image::after {
+  z-index: 1;
+}
+
+.image-temple::before {
+  right: 14%;
+  bottom: 17%;
+  width: 58%;
+  height: 62%;
+  background:
+    linear-gradient(90deg, #ece3ca 0 100%) 50% 62% / 70% 40% no-repeat,
+    linear-gradient(90deg, transparent 8%, #63382d 8.5% 14%, transparent 14.5% 86%, #63382d 86.5% 92%, transparent 92.5%) 50% 62% / 78% 43% no-repeat,
+    linear-gradient(170deg, transparent 42%, #704434 43% 58%, transparent 59%) 50% 18% / 100% 38% no-repeat;
+  border-bottom: 10px solid #5e392f;
+  filter: drop-shadow(0 8px 6px rgb(47 54 40 / 15%));
+}
+
+.image-pagoda::before {
+  right: 34%;
+  bottom: 14%;
+  width: 32%;
+  height: 68%;
+  background:
+    linear-gradient(90deg, #d9cfaf 0 100%) 50% 60% / 52% 48% no-repeat,
+    linear-gradient(90deg, transparent 12%, #6f4937 13% 87%, transparent 88%) 50% 58% / 100% 12% no-repeat,
+    linear-gradient(90deg, transparent 18%, #6f4937 19% 81%, transparent 82%) 50% 39% / 84% 12% no-repeat,
+    linear-gradient(90deg, transparent 28%, #6f4937 29% 71%, transparent 72%) 50% 20% / 68% 12% no-repeat,
+    linear-gradient(90deg, #76503d 0 100%) 50% 76% / 70% 10% no-repeat;
+  clip-path: polygon(48% 0, 52% 0, 54% 8%, 84% 18%, 72% 27%, 89% 37%, 77% 47%, 93% 58%, 79% 68%, 100% 78%, 0 78%, 21% 68%, 7% 58%, 23% 47%, 11% 37%, 28% 27%, 16% 18%, 46% 8%);
+  filter: drop-shadow(0 7px 5px rgb(47 54 40 / 14%));
+}
+
+.image-approach::before {
+  bottom: 0;
+  left: 8%;
+  width: 84%;
+  height: 80%;
+  background:
+    linear-gradient(90deg, #6e805e 0 14%, transparent 14.5% 86%, #6e805e 86.5%) 0 0 / 100% 55% no-repeat,
+    linear-gradient(90deg, #b68d63 0 100%) 50% 100% / 58% 36% no-repeat,
+    repeating-linear-gradient(90deg, #ede1bd 0 18px, #b98d61 18px 21px) 50% 100% / 58% 36% no-repeat;
+  clip-path: polygon(22% 18%, 78% 18%, 100% 100%, 0 100%);
+  opacity: 0.9;
+}
+
+.image-town::before {
+  bottom: 12%;
+  left: 10%;
+  width: 80%;
+  height: 55%;
+  background:
+    repeating-linear-gradient(90deg, #6d5b45 0 6%, #dbc7a3 6% 18%, #7d6049 18.5% 21%, #bca981 21.5% 38%);
+  border-top: 10px solid #735844;
+  box-shadow: 0 -28px 0 -18px #ece2bf;
+}
+
 .spot-image:hover {
-  background-size: auto, 106%;
+  filter: brightness(1.04) saturate(1.05);
 }
 
 .image-temple {
-  background-image: url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=82");
-  background-position: center 52%;
+  background:
+    linear-gradient(165deg, transparent 0 64%, #9f9677 64.5% 68%, transparent 68.5%),
+    linear-gradient(180deg, #b9c2ae 0 58%, #8f9277 58.5%);
 }
 
 .image-pagoda {
-  background-image: url("https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=1000&q=82");
-  background-position: center 55%;
+  background:
+    radial-gradient(circle at 14% 74%, #69785d 0 13%, transparent 13.5%),
+    radial-gradient(circle at 86% 68%, #7b8668 0 16%, transparent 16.5%),
+    linear-gradient(180deg, #bac2ac 0 64%, #a39f79 64.5%);
 }
 
 .image-approach {
-  background-image: url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1000&q=82");
-  background-position: center 58%;
+  background:
+    linear-gradient(150deg, transparent 0 58%, #d7cda8 58.5% 62%, transparent 62.5%),
+    linear-gradient(180deg, #b9c0ab 0 58%, #b2a77f 58.5%);
 }
 
 .image-town {
-  background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=82");
-  background-position: center 52%;
+  background:
+    linear-gradient(90deg, #9b8a68 0 8%, transparent 8.5% 92%, #9b8a68 92.5%),
+    linear-gradient(180deg, #bec5b3 0 55%, #a3a184 55.5%);
 }
 
 .image-index {
@@ -553,10 +646,19 @@ p {
 
 .route-photo {
   min-height: 100%;
-  background-image: linear-gradient(0deg, rgb(25 35 28 / 9%), rgb(25 35 28 / 9%)),
-    url("https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1200&q=85");
-  background-position: center;
-  background-size: cover;
+  background:
+    linear-gradient(155deg, transparent 0 57%, #c8bb96 57.5% 61%, transparent 61.5%),
+    linear-gradient(180deg, #bdc6b1 0 58%, #949a78 58.5%, #b9a982 75%, #8e8567 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.route-photo::before {
+  display: none;
+}
+
+.route-photo::after {
+  display: none;
 }
 
 .route-content {
